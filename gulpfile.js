@@ -20,8 +20,14 @@ gulp.task('sass', function() {
 
 // watch changes in 'sass' task
 gulp.task('sass-watch', function() {
-	gulp.watch('src/sass/*/*.scss', ['sass']);
+	gulp.watch(['src/sass/*.scss', 'src/sass/*/*.scss'], ['sass']);
 });
+
+// add font-awesome files to dist
+gulp.task('fonts', function() {
+	return gulp.src('node_modules/font-awesome/fonts/*.*')
+		.pipe(gulp.dest('dist/fonts'));
+})
 
 // copy jquery.js bootstrap.js popper.js from
 // node_modules to dist folder
@@ -49,4 +55,4 @@ gulp.task('scripts-watch', function() {
 });
 
 // run all tasks on start and watch for them
-gulp.task('default', ['sass', 'sass-watch', 'dep-js', 'scripts', 'scripts-watch']);
+gulp.task('default', ['sass', 'sass-watch', 'fonts' ,'dep-js', 'scripts', 'scripts-watch']);

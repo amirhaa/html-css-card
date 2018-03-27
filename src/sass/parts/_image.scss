@@ -1,0 +1,72 @@
+.app-card-image {
+	max-height:300px;
+	overflow:hidden;
+	position: relative;
+}
+.app-card-image > img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px)
+}
+.image-cover {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.image-cover .logo {
+	width: 15%;
+	padding:8px;
+	border-radius: 10px;
+	background: white;
+}
+.image-cover {
+	h4, h6 {
+		color: white;
+		font-weight: 500; 
+	}
+}
+.image-cover .cover-actions a {
+	text-decoration:none;
+	cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    vertical-align: middle;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.image-cover .cover-actions a i {
+	font-size: 1.2em;
+	color: white;
+}
+.image-cover .cover-actions a:first-child i {
+    font-size: 1.8em;
+}
+.closed-banner {
+	color: white;
+	background: $red;
+	border-bottom: 1px solid $high-black;
+	display: inline-block;
+	padding: 2px 50px 4px;
+	transform: rotate(35deg);
+	top: 10px;
+	position: absolute;
+	right: -40px;
+	font-size: .8rem;
+	font-weight: 500;
+}
+.cover-user {
+	margin: -10px 20px 0;
+}
+.cover-user a i {
+	color : darken(white, 30%);
+}

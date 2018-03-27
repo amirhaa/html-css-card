@@ -13,7 +13,88 @@
     <title>HTML AND CSS CARD</title>
   </head>
   <body>
+    <div class="app-wrapper d-flex justify-content-center align-items-start align-items-md-center">
+      <div class="app-card d-flex flex-column">
+          <!-- header -->
+          <div class="app-card-header d-flex flex-row justify-content-between align-items-center">
+            <a href="#"><i class="fa fa-edit"></i></a>
+            <div class="app-card-title d-flex flex-column justify-content-center align-items-center">
+              <h5>Starbucks</h5>
+              <h6>Activity</h6>
+            </div>
+            <a href="#"><i class="fa fa-search"></i></a>
+          </div>
+          <!-- image -->
+          <div class="app-card-image">
+            <img src="dist/images/card-image.jpg" class="img-fluid" alt="Starbucks" />
+            <div class="closed-banner">CLOSED</div>
+            <div class="image-cover d-flex flex-column justify-content-center align-items-center" dir="rtl">
+              <div class="logo">
+                <img src="dist/images/starbucks-logo.png" class="img-fluid" alt="Starbucks logo">
+              </div>
+              <h4>Starbucks</h4>
+              <h6>@N. San Antonio Rd, Los Altos</h6>
+              <div class="cover-actions d-flex flex-row justify-content-center">
+                <a href="#"><i class="fa fa-mobile"></i></a>
+                <a href="#"><i class="fa fa-map"></i></a>
+                <a href="#"><i class="fa fa-desktop"></i></a>
+              </div>
+              <div class="cover-user text-right align-self-start">
+                <a href="#"><i class="fa fa-user-circle"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- stats -->
+          <div class="app-stats d-flex flex-column justify-content-center align-items-center">
+            <div class="show-stats d-flex justify-content-around">
+              <div>
+                <h5>868</h5>
+                <h6>Followers</h6>
+              </div>
+              <div>
+                <h5>16</h5>
+                <h6>Buddies</h6>
+              </div>
+              <div>
+                <h5>14</h5>
+                <h6>ThumbsUp</h6>
+              </div>
+            </div>
+            <div class="stats-buttons d-flex flex-row justify-content-between">
+              <button type="button" class="btn btn-success">Following</button>
+              <div class="btn-group ml-4" role="group" aria-label="likes">
+                <button type="button" class="btn btn-light px-4"><i class="fa fa-external-link"></i></button>
+                <button type="button" class="btn btn-light px-4"><i class="fa fa-thumbs-o-up"></i></button>  
+              </div>
+            </div>
+          </div>
+          <!-- informatins -->
+          <div class="card-info">
+            <div class="card-info-inner d-flex justify-content-start">
+              <div class="info-image mr-3">
+                <img src="dist/images/starbucks-logo.png" class="img-fluid" alt="Starbucks" />
+              </div>
+              <div>
+                <h5 class="mb-1">Starbucks</h5>
+                <p>@ Castro St, Mountain View</p>
+              </div>
+            </div>
+          </div>
+          <!-- menus -->
+          <div class="card-menus">
+            <div class="menus-background-left"></div>
+            <div class="menus-links d-flex flex-row justify-content-between align-items-center">
+               <a href="#">VIDEOS</a>
+               <a href="#">DEALS</a>
+               <a href="#" class="active">ACTIVITY</a>
+               <a href="#">SOCIAL AGGRESSION</a>             
+            </div>
+            <div class="menus-background-right"></div>
+          </div>
 
+
+      </div>
+    </div>
     <!-- scripts -->
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/popper.min.js"></script>

@@ -1,0 +1,30 @@
+.app-card-header {
+	background: $blue;
+	min-height:50px;
+	width: 100%;
+	padding: 10px 15px;
+}
+.app-card-header a {
+	text-decoration: none;
+	color: darken(white, 10%);
+	transition: color .4s;
+}
+.app-card-header a:hover {
+	color: white;
+}
+.app-card-header a i {
+	font-size: 1.6rem;
+}
+.app-card-title {
+	h5, h6 {
+		color: white;
+		margin: 0;
+	}
+}
+.app-card-title h5 {
+	font-size: 1.1rem;
+}
+.app-card-title h6 {
+	font-size: .9rem;
+	font-weight: 400;
+}

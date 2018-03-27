@@ -1,0 +1,43 @@
+.card-menus {
+	position: relative;
+	background: darken($deep-black, 10%);
+	min-height: 40px;
+	padding:0;
+	overflow:hidden;
+}
+.card-menus a {
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+	padding:30px 10px;
+	transition: color .4s;
+	white-space: nowrap;
+}
+.card-menus a:hover {
+	color: lighten(green, 20%);
+}
+.card-menus a.active {
+	color: lighten(green, 20%);
+	border-bottom: 3px solid $purple;
+}
+.menus-background-left {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	background: linear-gradient(to right, #151515 , rgba(21, 21, 21, .6));
+	left: 0;
+	top:0;
+}
+.menus-background-right {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	background: linear-gradient(to left, #151515 , rgba(21, 21, 21, .6));
+	right: 0;
+	top:0;
+}
+@media (max-width: 767px) {
+	.menus-links {
+		overflow-x: auto;
+	}
+}

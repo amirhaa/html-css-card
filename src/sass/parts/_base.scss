@@ -1,0 +1,23 @@
+body {
+	background: white;
+}
+
+@media (min-width: 768px) {
+	.app-wrapper{
+		min-height: 750px;
+		height: 100vh;
+	}
+}
+.app-card {
+	background: $deep-black;
+	width:100%;
+	min-height: 600px;
+	box-shadow: 1px 1px 10px $medium-black;
+	border-radius: 5px;
+	padding: 4px;
+}
+@media (min-width: 768px) {
+	.app-card {
+		width: 480px;
+	}
+}
